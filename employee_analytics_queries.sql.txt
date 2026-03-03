@@ -1,0 +1,28 @@
+🎯 Total Weighted Score Per Employee
+SELECT 
+    e.employee_id,
+    e.first_name,
+    e.last_name,
+    SUM(k.weight * r.performance_score) / 100 AS weighted_score
+FROM employee_kpi_results r
+JOIN kpi_definitions k ON r.kpi_id = k.kpi_id
+JOIN employees e ON r.employee_id = e.employee_id
+WHERE r.cycle_id = 1
+GROUP BY e.employee_id, e.first_name, e.last_name
+ORDER BY weighted_score DESC;
+
+
+6️⃣ Promotion Logic Example
+SELECT *
+FROM (
+    SELECT 
+        e.employee_id,
+        e.first_name,
+        SUM(k.weight * r.performance_score) / 100 AS weighted_score
+    FROM employee_kpi_results r
+    JOIN kpi_definitions k ON r.kpi_id = k.kpi_id
+    JOIN employees e ON r.employee_id = e.employee_id
+    WHERE r.cycle_id = 1
+    GROUP BY e.employee_id, e.first_name
+) AS scores
+WHERE weighted_score > 85;
