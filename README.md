@@ -2,17 +2,17 @@
 
 ## 📌 Project Overview
 
-This project designs a structured SQL database that tracks employee performance and links it to operational supply chain KPIs. The system enables leaders to evaluate employees using measurable metrics, generate appraisal-ready reports, and support transparent, data-driven promotion decisions.
+This project designs a structured SQL database to track employee performance and link it to operational supply chain KPIs. The system enables leaders to evaluate employees using measurable metrics, generate appraisal-ready reports, and support transparent, data-driven promotion decisions.
 
-By integrating HR data with operational performance indicators, the database demonstrates how analytics can align workforce performance with supply chain efficiency and business outcomes.
+By combining HR data with operational performance indicators, the database shows how analytics can align workforce performance with supply chain efficiency and business results.
 
 ## 🛠 Tools Used
 
-SQL – Database design, queries, and analytics
-PostgreSQL / MySQL / SQL Server – Relational database management
-DBMS Tools – Database creation and query execution
-GitHub – Version control and project documentation
-ER Diagram Tool (draw.io / Lucidchart) – Database schema visualization
+* SQL – Database design, queries, and analytics
+* PostgreSQL / MySQL / SQL Server – Relational database management
+* DBMS Tools – Database creation and query execution
+* GitHub – Version control and project documentation
+* ER Diagram Tool (draw.io / Lucidchart) – Database schema visualization
 
 ## 🗂 Database Schema
 
@@ -20,14 +20,14 @@ The database is designed using third normal form (3NF) to ensure data integrity,
 
 Key tables include:
 
-employees – Employee information and organizational structure
-departments – Business units within the supply chain organization
-roles – Job roles and experience levels
-performance_cycles – Evaluation periods for performance reviews
-kpi_definitions – Supply chain performance metrics and weights
-employee_kpi_results – Employee performance against KPIs
-manager_reviews – Manager evaluation scores and qualitative feedback
-promotion_recommendations – Data-driven promotion eligibility
+* employees – Employee information and organizational structure
+* departments – Business units within the supply chain organization
+* roles – Job roles and experience levels
+* performance_cycles – Evaluation periods for performance reviews
+* kpi_definitions – Supply chain performance metrics and weights
+* employee_kpi_results – Employee performance against KPIs
+* manager_reviews – Manager evaluation scores and qualitative feedback
+* promotion_recommendations – Data-driven promotion eligibility
 
 Relationships are implemented through primary keys and foreign keys to maintain referential integrity across the system.
 
@@ -76,7 +76,7 @@ Each KPI is assigned a performance weight, allowing leaders to calculate weighte
 ## 📁 Project Structure
 
 employee-performance-analytics-sql
-│
+(```)│
 ├── README.md
 │
 ├── schema
