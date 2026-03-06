@@ -77,7 +77,8 @@ Each KPI is assigned a performance weight, allowing leaders to calculate weighte
 
 employee-performance-analytics-sql
 
-```│
+```
+│
 ├── README.md
 │
 ├── schema
